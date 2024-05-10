@@ -1,0 +1,41 @@
+<!-- @if(isLoggedIn){
+  <div>User is Logged in</div>
+}
+<div style="text-align: center;">
+  <h1 class = "text-green-500">Welcome to Structural Directives</h1>
+  Enter Your name : <input type="text" #txtname (keyup)="0"><br />
+  @switch(txtname.value)
+  {
+  @case('Sef'){
+  <b>Hello Sef</b>
+  }
+  @case('Jam'){
+  <b>Hello Jam</b>
+  }
+  @case('John'){
+  <b>Hello John</b>
+  }@default{
+  <b>No data matched</b>
+  }
+  }
+</div>
+
+<table border="1">
+  <tr>
+      <th>EMPLOYEE ID</th>
+      <th>EMPLOYEE NAME</th>
+  </tr>
+  @for(emp of employee;track emp.id){
+  <tr>
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+  </tr>
+  }@empty{
+  <tr>
+      <td colspan="2">No Data Found</td>
+  </tr>
+  }
+</table> -->
+
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
